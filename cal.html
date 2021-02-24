@@ -1,0 +1,67 @@
+<html>
+	<title>Kevcore Tools</title>
+	<link rel="KC ICON" type="image/png" href="https://cdn.discordapp.com/attachments/782313784215601222/792900639226986534/purpletransparentKC.png"/>
+<head>
+<body>
+<style>
+ body {
+  background-image: url("./kevintoolsbackground.png");
+  background-size: 100%;
+  color : white;
+  font-family:'Segoe UI'
+ }
+table{
+    margin: auto;
+    background-color: #9dd2ea;
+    width: 295px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
+}
+input {
+  padding: 25px; 
+  font-size: 24px;
+  background-color: aqua;
+  color: red;
+  cursor: pointer;
+}
+</style>
+<body bgcolor= "#000000" text= "gold">
+  <br>
+
+  <form name="calculator" style="text-align: center;">
+    <input style="text-align: right; padding: 1px;" type="textfield" name="ans" value="" disabled="true"><br>
+<br>
+<br>
+
+    <input type="button" value="(" onClick="document.calculator.ans.value+='('">
+    <input type="button" value=")" onClick="document.calculator.ans.value+=')'">
+
+  <input style="padding: 18px;" type="button" value="&#9003;" onclick="document.calculator.ans.value=document.calculator.ans.value.substring(0,document.calculator.ans.value.length-1)">
+  <input type="reset" value="C">
+<br>
+  <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+  <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+  <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+  <input type="button" value="&#247" onClick="document.calculator.ans.value+='/'"><br>
+  <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+  <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+  <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+  <input type="button" value="x" onClick="document.calculator.ans.value+='*'"><br>
+  <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+  <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+  <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+  <input type="button" value="+" onClick="document.calculator.ans.value+='+'"><br>
+  <input type="button" value=".&nbsp;" onClick="document.calculator.ans.value+='.'">
+  <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+
+  <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"> 
+   <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+  <br>
+
+
+
+  </form>
+             </body>
+             </head>
+             </html>
