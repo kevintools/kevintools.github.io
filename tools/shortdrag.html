@@ -49,8 +49,8 @@ body {
     transform: translate(-50%,-50%);
     border: 0;
     line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
+    padding: 50 100px;
+    font-size: 36px;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
@@ -85,7 +85,7 @@ body {
   </div>
   <script type="text/javascript">
     var score; // to store the current score
-    var duration = 0.5; // 10 seconds
+    var duration = 0.25; // 10 seconds
     var startTime; // start time
     var ended = true; // boolean indicating if game is ended
     // we get DOM References for some HTML elements
@@ -136,7 +136,7 @@ body {
     //to update DOM elements just before the alert
     setTimeout(function() {
       alert('You made ' + score + ' clicks in ' + duration + 
-      ' seconds. (' + clicsBySeconds + 
+      ' seconds. (About ' + clicsBySeconds + 
       ' CPS) ');
     }, 10);
   }
