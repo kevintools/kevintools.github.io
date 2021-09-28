@@ -7,6 +7,8 @@ body {
     color:white;
     font-family: 'Segoe UI';
     background-image: url("../kevintoolsbackground.png");
+  background-color: black;
+
 }
 
   #content {
@@ -75,6 +77,52 @@ body {
 </style>
 </head>
 <body>
+  <html>
+	<title>Kevcore Tools</title>
+	<link rel="KC ICON" type="image/png" href="https://cdn.discordapp.com/attachments/782313784215601222/792900639226986534/purpletransparentKC.png"/>
+<head>
+<body>
+<style>
+ body {
+  background-image: url("../kevintoolsbackground.png");
+  background-size: 100%;
+  color : white;
+  font-family:'Segoe UI'
+ }
+table{
+    margin: auto;
+    background-color: lime;
+    width: 325px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
+padding-right: 10px;
+}
+input {
+  padding: 25px; 
+  font-size: 24px;
+  background-color: aqua;
+  color: red;
+  cursor: pointer;
+}
+</style>
+<table class="cc_cursor" style="height: 31px;" width="51">
+<tbody>
+<tr>
+					<!--pages-->
+
+					<td style="width: 41px; color: orchid"><a href="https://kevintools.github.io/"><span><img style="float: left;" src="https://cdn.discordapp.com/attachments/782313784215601222/792900639226986534/purpletransparentKC.png" alt="KC logo" width="64" height="64"></span></a></td>
+						<td style="width: 41px; font-family:'Segoe UI';"><a href="../index.html"><span style="color:hotpink"><b>Home</b></span></a></td>
+						<td>|</td>
+						<td style="width: 41px; font-family:'Segoe UI';"><a href="../schedule.html"><span style="color:hotpink"><b>Teacher&nbsp;Blogs</b></span></a></td>
+						<td>|</td>
+						<td style="width: 41px; font-family:'Segoe UI';"><a href="./index.html"><span style="color:hotpink"><b>Tools&nbsp;</b></span></a></td>
+					<!---->
+
+</tr>
+</tbody>
+</table>
+<hr>
   <div id="content">
     Timer: <span id="timer"></span><br/>
     Score: <span id="score"></span><br/>
@@ -128,8 +176,8 @@ body {
     show(startBtn);
     setTimeout(function() {
       alert('You made ' + score + ' clicks in ' + duration + 
-      ' seconds. (' + clicsBySeconds + 
-      ' CPS) ');
+      ' seconds. (~' + clicsBySeconds + 
+      ' CPS)');
     }, 10);
   }
   startBtn.addEventListener("click", function(e) {
